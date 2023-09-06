@@ -162,7 +162,7 @@ try:
 	st.write(fig2)
 
 except:
-	st.write('Subscribe now for further analysis and forcast data!')
+	st.write('Thank you!')
 
 	hide_streamlit_style = """
 	<style>
