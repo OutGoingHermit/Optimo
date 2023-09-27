@@ -47,7 +47,7 @@ TODAY = date.today().strftime("%Y-%m-%d")
 
 #primary page title and add disclaimer
 st.set_page_config(page_title = "Optimo", layout = "wide")
-st.title("Portfolio Optimization Calculator")
+st.title("S&P 500 Portfolio Optimization Calculator")
 
 
 #load in ticker symbols for query form
