@@ -78,12 +78,7 @@ else:
 			st.text('Not subscribed.')
 			
 
-if 'subscribed' in st.session_state.keys():
-			if st.session_state['subscribed' == False]:
-				st.text('Not subscribed.')
-			if st.session_state['subscribed' == True]:
-				
-				try:
+try:
 					#load yahoo finance data
 					@st.cache_data
 					def load_data(tickers):
@@ -186,7 +181,7 @@ if 'subscribed' in st.session_state.keys():
 					fig2 = m.plot_components(forecast)
 					st.write(fig2)
 	
-				except:
+except:
 					st.markdown('Add more tickers!')
 			
 #end user authentication 
