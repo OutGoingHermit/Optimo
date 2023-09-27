@@ -79,6 +79,8 @@ else:
 			
 
 if 'subscribed' in st.session_state.keys():
+			if st.session_state['subscribed' == False]:
+				st.text('Not subscribed.')
 			if st.session_state['subscribed' == True]:
 				
 				try:
@@ -186,7 +188,7 @@ if 'subscribed' in st.session_state.keys():
 	
 				except:
 					st.markdown('Add more tickers!')
-
+			
 #end user authentication 
 
 hide_streamlit_style = """
