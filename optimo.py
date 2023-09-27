@@ -63,7 +63,7 @@ st.caption('Enter more than 5 stock TICKERS to be included in portfolio')
 
 submitted = st.markdown(
 		f"""
-		Want to support this web tool? Subscribe Below :point_down:
+		Want to support this free web tool? Subscribe Below :point_down:
 			
 				
 		### [Subscribe Now!]({config('STRIPE_CHECKOUT_LINK')})			
