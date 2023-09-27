@@ -74,8 +74,9 @@ if submitted:
 			st.session_state['subscribed'] = True
 			st.text('Thank you for subscribing!')
 else:
-			st.text('Not subscribed.')
 			st.session_state['subscribed'] = False
+			st.text('Not subscribed.')
+			
 
 if 'subscribed' in st.session_state.keys():
 			if st.session_state['subscribed' == True]:
