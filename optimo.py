@@ -72,13 +72,14 @@ submitted = st.markdown(
 
 if submitted:
 			st.session_state['subscribed'] = True
-			st.text('Succesfully Subscribed!')
+			st.text('Thank you for subscribing!')
 else:
 			st.text('Not subscribed.')
 			st.session_state['subscribed'] = False
 
 if 'subscribed' in st.session_state.keys():
-			if st.session_state['subscribed']:
+			if st.session_state['subscribed' == True]:
+				
 				try:
 					#load yahoo finance data
 					@st.cache_data
@@ -181,7 +182,7 @@ if 'subscribed' in st.session_state.keys():
 					st.write('forecast components')
 					fig2 = m.plot_components(forecast)
 					st.write(fig2)
-
+	
 				except:
 					st.markdown('Add more tickers!')
 
